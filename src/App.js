@@ -10,6 +10,12 @@ function App() {
       <Banner />
       <Tiles url={apis.fetchTrending} isLargeTile={true} />
       <Tiles url={apis.fetchTopRated} />
+      <Tiles url={apis.fetchActionMovies} />
+      <Tiles url={apis.fetchComedyMovies} />
+      <Tiles url={apis.fetchDocumentaries} />
+      <Tiles url={apis.fetchHorrorMovies} />
+      <Tiles url={apis.fetchRomanceMovies} />
+      <Tiles url={apis.fetchNetflixOriginals} />
     </div>
   );
 }

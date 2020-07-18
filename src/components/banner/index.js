@@ -26,7 +26,18 @@ function Banner(props) {
       backgroundImage: `url(${imageUrlPrefix}${path})`,
       backgroundColor: "black",
     };
-    return <div className="banner" style={styles}></div>;
+    return (
+      <div className="banner" style={styles}>
+        <div class="banner_contents">
+          <h1 class="banner_title">{banner.original_name}</h1>
+          <div class="banner_buttons">
+            <button class="banner_button">Play</button>
+            <button class="banner_button">My List</button>
+          </div>
+          <h1 class="banner_description">{banner.overview}</h1>
+        </div>
+      </div>
+    );
   } else {
     return null;
   }
